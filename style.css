@@ -6,7 +6,7 @@
 
 body {
   font-size: 16px;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 .cta-container {
@@ -80,11 +80,20 @@ body {
   padding-top: 0.5em;
 }
 
-hj {
-    /* 
-    1: destop style
-    2: google font import
-    */
+@media (min-width: 600px) {
+  body {
+    width: 100vw;
+  }
+
+  .cta-container {
+    width: 100%;
+  }
+
+  .desktop-half {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+  }
 }
 
 .attribution {
